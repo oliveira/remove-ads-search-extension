@@ -1,0 +1,19 @@
+{
+  "name": "Remove ads from search results",
+  "description": "The most easy way to remove ads.",
+  "version": "1",
+  "icons": {
+  "16": "icon16.png",
+  "32": "icon32.png",
+  "64": "icon64.png",
+  "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["index.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "manifest_version": 2
+}
